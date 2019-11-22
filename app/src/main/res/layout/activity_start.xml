@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@color/colorAccent"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            >
+
+            <TextView
+                android:id="@+id/welcome_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/white"
+                android:text="Welcome, !!"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/addphoto"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="#fff"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/events_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_event_note_black_24dp"
+                            android:tint="@color/colorAccent"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Events"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorAccent"
+                            />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="#fff"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/child_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_family"
+                            android:padding="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Children"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorAccent"
+                            />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:src="#fff"
+                        android:layout_centerInParent="true"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/geo_btn"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:layout_centerInParent="true"
+                        >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_radar"
+                            android:padding="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Geofence"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorAccent"
+                            />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

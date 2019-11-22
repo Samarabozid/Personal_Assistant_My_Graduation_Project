@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Personal Assistant</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="channel_name">name</string>
+    <string name="channel_description">description</string>
+    <string name="title_activity_maps2">Map</string>
+</resources>

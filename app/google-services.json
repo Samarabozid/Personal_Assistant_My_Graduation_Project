@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "482538418314",
+    "firebase_url": "https://personal-assistant-8edb6.firebaseio.com",
+    "project_id": "personal-assistant-8edb6",
+    "storage_bucket": "personal-assistant-8edb6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:482538418314:android:d2085f39b64be519",
+        "android_client_info": {
+          "package_name": "samar.abozid.personalassistant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "482538418314-rft8jl8lc6pdqq48454genpqnsh0po4e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "samar.abozid.personalassistant",
+            "certificate_hash": "23d4a38124968feb2c2089fe3280a75d57b24b95"
+          }
+        },
+        {
+          "client_id": "482538418314-g5d2jtevpubjo31uc3i28kf4427e4ond.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwc2dlkbyNJ7MWn3PUw0ada-ju9wJy7_g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "482538418314-g5d2jtevpubjo31uc3i28kf4427e4ond.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

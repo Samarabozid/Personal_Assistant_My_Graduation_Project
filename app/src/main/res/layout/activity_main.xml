@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@color/colorPrimary"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_margin="30dp"
+        android:layout_centerInParent="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="Sign in To Your Account"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="5dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter your email and password"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <EditText
+                    android:id="@+id/email_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="Email Address"
+                    android:inputType="textEmailAddress"
+                    android:textSize="16sp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="13dp"
+                    android:paddingBottom="13dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@android:color/white"
+                    app:hintEnabled="false"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    >
+
+                    <EditText
+                        android:id="@+id/password_field"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_text_background"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:textSize="16sp"
+                        android:padding="10dp"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                    <com.balysv.materialripple.MaterialRippleLayout
+                        style="@style/RippleStyleWhite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <Button
+                            android:id="@+id/sign_in_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="sign in"
+                            android:background="@color/colorAccent"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            />
+
+                    </com.balysv.materialripple.MaterialRippleLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:id="@+id/dont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dont have an account ? Register"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+            </LinearLayout>
+
+            <com.victor.loading.rotate.RotateLoading
+                android:id="@+id/rotateloading"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:loading_width="5dp"
+                app:loading_color="@color/colorPrimary"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
